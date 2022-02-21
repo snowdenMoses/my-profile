@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profiler</title>        
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+
+
+        <div class="mob-nav">
+            
+            <ul class="mob-nav-links">
+                <div>
+                    <li class="home"><span >Home</span></li>
+                    <li class="about"><span>About</span></li>
+                    <li class="contact"><span>Contact</span> </li>
+                </div>
+                
+            </ul>
+        </div>
+        <div class="container">
+                            <nav class = "navigation">
+                                <div class="logo">
+                                    <span>Console</span><span style="color: crimson;">DotLog</span>
+                                </div>
+                                <div class="mob-menu-outline">
+                                    <i class="fa fa-bars toggle"></i>
+                                </div>
+
+                                    <ul class="nav-links">
+                                        <div>
+                                            <li class="home2"><span >Home</span></li>
+                                            <li class="about2"><span>About</span></li>
+                                            <li class="contact2"><span>Contact</span> </li>
+                                        </div>
+                                        
+                                    </ul>
+                            </nav>
+                            <div class="banner">
+                                <div class="description">
+                                    <div>
+                                        <span class="staticText">Snowden Moses a </span> <span class="autoTyped"></span>
+                                    </div>
+                                    
+                                    
+
+                                </div>
+
+                                <div class="connect">
+                                    <span class="getConnect">Get Connected</span> <span class="more">More</span>
+                                    <i class="fa fa-arrow-alt-circle-up left"></i>
+                                </div>
+
+                            </div>
+
+                            <div class = "about-me">
+                                <span class="header">About Me</span>
+                                <div class="box-about">
+                                    <div class="profile-image">
+                                        <img src="images/profile-image.png" class="profile-image"/>
+                                    </div>
+                                    
+                                    <div class="write-ups">
+                                        <span>
+                                            My name is Abubakar Moses Bakoshi, an engineering graduate from Ahmadu Bello university Zaria, Kaduna State, Nigeria. A driven programmer who welcomes challenging projects and enjoy working with all sorts of personalities.
+                                            I am a self motivated person witha high level of experience as a web and mobile app developer. My stacks include;
+                                            JavaScript (Vuejs, ReactJs, React Native), Java, Python, NodeJs, ExpressJs, MongoDB, PHP, HTML and CSS. With my +6 years experience in web/mobile development, and a plethora of work to show for it, it's a 
+                                            guarantee to get a good work from me  
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class = "our-work">
+                                <span class="header">Our Work in Pictures</span>
+                                <div class="box-our-work">
+                                    <div class="our-images">
+                                        <img src="images/capture1.jpg" class="capture"/>
+                                        <img src="images/Capture2.jpg" class="capture"/>
+                                        <img src="images/Capture3.jpg" class="capture"/>
+                                        <img src="images/Capture4.jpg" class="capture"/>
+                                        <img src="images/Capture7.jpg" class="capture"/>
+                                        <img src="images/Capture5.jpg" class="capture"/>
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+
+                            <div class = "contact-me">
+                                        <span class="header">Contact Me</span>
+                                        <div class="box-contact-me">
+                                            <div class="contact-info">
+                                                <h2>Just a Message Away</h2>
+                                                <span>
+                                                    Contact me for any of the aforementioned services. I am available round the clock and round the week.
+                                                </span>
+                                                
+                                                <div class="holding-grid">
+
+                                                    <div class="box">
+                                                        <i class="fa fa-location-arrow"></i> 
+                                                        <p>Bassa, Plateau State</p>
+                                                    </div>
+
+                                                    <div class="box">
+                                                        <i class="fa fa-at"> </i>
+                                                        <p>abubakarmoses@yahoo.com</p>
+                                                    </div>
+
+                                                    <div class="box">
+                                                        <i class="fa fa-twitter"></i> 
+                                                        <p>twitter.com/snowdenmoses</p>
+                                                    </div>
+
+                                                    <div class="box">
+                                                        <i class="fa fa-instagram"></i> 
+                                                        <p>instagram.com/snowdenmoses</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                </div>
+
+                                
+
+
+                            <div class="footer1">
+                                <span class="copyright"></span>
+                                <span class="author">Design by Abubakar Moses </span>
+                
+                            </div>
+
+            
+        </div>
+
+       
+
+
+        
+        <script>
+
+            var options = {
+            strings: ['Web Dev','Android App Dev','Desktop App Dev','Python Tutor', 'CAD Tutor'],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop:true
+            };
+
+            var typed = new Typed('.autoTyped', options);
+
+
+            //Nav-Menu
+            const container =  document.querySelector('.container')
+            const banner =  document.querySelector('.banner')
+            const menu_open =  document.querySelector('.fa-bars')
+            const menu_close =  document.querySelector('.fa-window-close')
+            const navigation =  document.querySelector('.mob-nav-links')
+            const copyright =  document.querySelector('.copyright')
+            const year = new Date().getFullYear()
+
+
+            copyright.textContent="@Copyright "+year
+
+
+            menu_open.addEventListener('click',()=>{
+
+               
+                menu_open.classList.toggle('fa-bars')
+
+                menu_open.classList.toggle('fa-window-close')
+
+
+
+                if(menu_open.classList.contains('fa-window-close')){
+                        container.classList.toggle('toggled-container')
+
+                }
+
+                else{
+                    container.classList.toggle('toggled-container')
+                }
+            })
+
+
+
+            // Scroll To
+            const home =  document.querySelector('.home')
+            const about =  document.querySelector('.about')
+            const contact =  document.querySelector('.contact')
+
+            const home2=  document.querySelector('.home2')
+            const about2 =  document.querySelector('.about2')
+            const contact2 =  document.querySelector('.contact2')
+            const navigation2 =  document.querySelector('.navigation')
+            const about_me =  document.querySelector('.about-me')
+            const contact_me =  document.querySelector('.contact-me')
+
+            const getConnected =  document.querySelector('.getConnect')
+            const more =  document.querySelector('.more')
+
+
+
+            // home.addEventListener('click',()=>{
+            //     navigation2.scrollIntoView({behavior:"smooth"})
+
+            // })
+
+            home2.addEventListener('click',()=>{
+                navigation2.scrollIntoView({behavior:"smooth"})
+
+            })
+
+
+            // about.addEventListener('click',()=>{
+            // about_me.scrollIntoView({behavior:"smooth"})
+
+            // })
+
+            more.addEventListener('click',()=>{
+            about_me.scrollIntoView({behavior:"smooth"})
+
+            })
+
+            about2.addEventListener('click',()=>{
+            about_me.scrollIntoView({behavior:"smooth"})
+
+            })
+
+            // contact.addEventListener('click',()=>{
+            // contact_me.scrollIntoView({behavior:"smooth"})
+
+            // })
+
+            getConnected.addEventListener('click',()=>{
+            contact_me.scrollIntoView({behavior:"smooth"})
+
+            })
+
+            contact2.addEventListener('click',()=>{
+            contact_me.scrollIntoView({behavior:"smooth"})
+
+            })
+
+
+        </script>
+        
+    </body>
+
+    
+</html>

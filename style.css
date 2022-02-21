@@ -1,0 +1,697 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 18px;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+    /* background-color: black; */
+    
+}
+
+.container{
+    position: absolute;
+    transition: 0.5s;
+    z-index: 300;
+    width: 100%;
+}
+
+
+
+
+
+/* Headedr */
+
+.mob-nav{
+    display: none;
+}
+
+.mob-menu-outline{
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 5px;
+
+
+}
+
+.navigation{
+    background-color:#090909;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 150%;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: -10;
+    /* position: relative; */
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.nav-links{
+    margin-right: 20px;
+    font-size: 70%;
+    transition: all 0.5s;
+}
+
+
+
+
+.nav-links li{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.nav-links li:hover,
+.nav-links li:active{
+    border-bottom: crimson 1px solid;
+    padding: 10px;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(10, 10, 10, 0.893),rgba(10, 10, 10, 0.693)),url("images/undraw_edit3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    position: relative;
+    margin-top: 0;
+    z-index: 300;
+}
+
+
+
+/* Typed js */
+.description{
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    font-size: 170%;
+    color: white;
+   
+}
+
+
+.staticText{
+    
+    font-size: 90%;
+    font-family: 'Asap', sans-serif;
+   
+}
+
+.autoTyped{
+    color: crimson;
+    font-size: 130%;
+    font-family: 'Lobster', cursive;
+   
+}
+
+.connect{
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    font-size: 130%;
+    color: white;
+   
+}
+
+.getConnect:hover{
+    background-color: crimson;
+   
+}
+
+.getConnect{
+    border:2px solid crimson;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: all 0.5s;
+   
+}
+
+.more{
+    background-color: crimson;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: border 0.5s;
+}
+
+.more:hover{
+    background-color: rgba(220, 20, 60, 0);
+    border:2px solid crimson;
+    
+   
+}
+
+
+@media only screen and (max-width:1200px){
+
+    .description{
+        font-size: 140%;
+    }
+    
+    .staticText{
+        font-size: 85%;
+       
+    }
+    
+    .autoTyped{
+        color: crimson;
+        font-size: 110%;
+       
+    }
+
+
+}
+
+@media only screen and (max-width:900px){
+
+    .description{
+        font-size: 130%;
+    }
+    
+    .staticText{
+        font-size: 80%;
+       
+    }
+    
+    .autoTyped{
+        color: crimson;
+        font-size: 100%;
+       
+    }
+
+
+}
+
+
+@media only screen and (max-width:750px){
+
+    .toggled-container{
+        transform: translateX(-50%);
+        display: inline-block;
+    }
+
+    .menu-outline{
+        display: inline-block;
+        margin-right: 20px;
+        z-index: 101;
+    }
+
+    .description{
+        font-size: 150%;
+    }
+    
+    .staticText{
+        font-size: 60%;
+
+       
+    }
+    
+    .autoTyped{
+        color: crimson;
+        font-size: 80%;
+       
+    }
+
+    .nav-links{
+       display:none;
+    }
+
+    .logo{
+        margin-left: 20px;
+        font-size: 80%;
+    }
+
+    .mob-menu-outline
+    {
+        display: inline-block;
+        z-index: 200;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 30px;
+    
+    }
+
+    .mob-nav{
+        display:inline-block;
+        color: black;
+        position: absolute;
+        top:50vh;
+        right:0;
+        width: 50vw;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        background: white;
+        cursor: pointer;
+    }
+    
+    .mob-nav-links{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+    }
+
+    .mob-nav-links li {
+        display: block!important;
+    }
+    
+    
+    .mob-nav-links li span{
+        transition: all 0.5s;
+        display: block!important;
+        font-size: 110%;
+        z-index: 400;
+    }
+    
+    .mob-nav-links li span:hover{
+        padding: 5px;
+        border-bottom: 1px solid crimson;
+    }
+  
+
+
+}
+
+
+@media only screen and (max-width:650px){
+
+    .description{
+        font-size: 130%;
+    }
+    
+    .staticText{
+        font-size: 50%;
+
+       
+    }
+    
+    .autoTyped{
+        color: crimson;
+        font-size: 70%;
+       
+    }
+
+    .connect{
+        font-size: 100%;
+       
+    }
+
+
+}
+
+@media only screen and (max-width:550px){
+
+    .description{
+        font-size: 115%;
+    }
+
+    .connect{
+        font-size: 100%;
+       
+    }
+
+
+}
+
+
+
+
+/*About Me*/
+
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-about{
+    box-shadow:-10px 10px 40px rgba(0,0,0,0.25);
+    /* border: 0.5px solid black; */
+    /* border-right: crimson solid 100px; */
+    border-radius: 30px;
+    width: 95%;
+    height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.write-ups{
+    font-size: 130%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    
+}
+
+.write-ups span{
+    font-family: 'roboto';
+    text-align: justify;
+}
+
+.profile-image{
+    /* flex-grow: 2; */
+    width: 30vw;
+    height:60vh;
+    margin-right: 5px;
+/* position: absolute;
+
+ */
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:750px){
+
+    .box-about{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        
+    }
+
+    .profile-image{
+        width: auto;
+    }
+
+    .write-ups{
+        text-align: center;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    font-size: 200%;
+    font-family: 'Asap', sans-serif;
+    margin-top: 60px;
+    
+}
+
+.header::after{
+    content: "";
+    background-color: crimson;
+    width: 100%;
+    height:4px;
+    margin-top: 10px;
+    margin-bottom:20px ;
+    display: block;
+}
+
+.Box{
+    box-shadow:-10px 10px 40px rgba(0,0,0,0.25);
+    /* border: 0.5px solid black; */
+    /* border-right: crimson solid 100px; */
+    border-radius: 10px;
+    width: 70%;
+    height: 60vh;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+
+/* Oour Work */
+
+.our-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+.box-our-work {
+    width: 100%;
+    
+    /* flex-direction: column; */
+    
+}
+
+.our-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* display: flex; */
+}
+
+.capture{
+    width: 47%;
+    transition: 0.5s;
+    padding: 5px;
+    
+}
+
+.capture:hover{
+   transform: scale(0.8) rotate(-15deg);
+   box-shadow:-10px 10px 40px rgba(0,0,0,0.15);
+}
+
+
+
+/* Contact Me */
+
+.contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    font-family: "roboto";
+
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+
+}
+
+.contact-info h2{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+/* .box-contact-me{
+    box-shadow:-10px 10px 40px rgba(0,0,0,0.25);
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+} */
+
+
+
+
+
+.holding-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 20px;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    box-shadow:-10px 10px 40px rgba(0,0,0,0.15);
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.box i{
+    position: absolute;
+    top:-20px;
+    font-size: 50px;
+    left:50%;
+    transform: translateX(-50%);
+    color: crimson;
+}
+
+.box p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Footer */
+
+.footer1{
+    position: sticky;
+    height: 50px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 80%;
+   
+
+}
+
+.copyright{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.author{
+    display: block;
+}
+
+
+@media only screen and (max-width:750px){
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(10, 10, 10, 1),rgba(10, 10, 10, 1));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-size: cover; */
+        height: 90vh;
+        position: relative;
+        margin-top: 0;
+        z-index: 300;
+        /* background-size: 90%; */
+    }
+
+
+    .description{
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        font-size: 1rem;
+       
+    }
+    
+    
+    .autoTyped{
+        color: crimson;
+        font-size: 110%;
+        font-family: 'Lobster', cursive;
+       
+    }
+    
+    .connect{
+        z-index: 99;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 80%;
+        color: white;
+       
+    }
+
+    .header{
+        font-size: 100%;
+        font-family: 'Asap', sans-serif;
+        margin-top: 40px;
+        
+    }
+
+    .write-ups{
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-align: justify;
+        padding: 10px;
+    }
+
+
+    .staticText{
+    
+        display: block;
+        font-size: 120%;
+       
+    }
+    
+    .autoTyped{
+        /* display: block; */
+        font-size: 140%;
+       
+    }
+
+    .capture{
+        width: 95%;
+        transition: 0.5s;
+        padding: 5px;
+        
+    }
+}
+
+
+

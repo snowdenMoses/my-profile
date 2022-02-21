@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <div class="services">
+            <span class="header"> Our Services</span>
+            <div class="Box">
+                <div class="slide">
+                    <img src="images/profile-2.jpeg" class="image"/>
+                    <img src="images/profile-3.jpeg" class="image"/>
+                    <img src="images/profile-4.jpeg" class="image"/>
+                </div>
+                
+                <div class="sideBar">
+                    <div class="sliderNav">
+                        <li class="up"> <i class="fa fa-arrow-circle-up"></i> </li>
+                        <li class="down"> <i class="fa fa-arrow-circle-down"></i> </li>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <style>
+         
+            .services{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+                flex-direction: column;
+            }
+
+            .header{
+                font-size: 200%;
+                font-family: 'Asap', sans-serif;
+            }
+
+            .header::after{
+                content: "";
+                background-color: crimson;
+                width: 100%;
+                height:4px;
+                margin-top: 10px;
+                display: block;
+            }
+
+            .Box{
+                box-shadow:-10px 10px 40px rgba(0,0,0,0.25);
+                /* border: 0.5px solid black; */
+                /* border-right: crimson solid 100px; */
+                border-radius: 10px;
+                width: 70%;
+                height: 60vh;
+                border-radius: 10px;
+                margin-top: 30px;
+                position: relative;
+                overflow: hidden;
+                
+            }
+
+            .sliderNav{
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            justify-content:space-between;
+            list-style: none;
+            }
+
+            .sliderNav .up{
+                margin-top: 40px;
+                cursor: pointer;
+            }
+
+            .sliderNav .down{
+                margin-bottom: 40px;
+                cursor: pointer;
+            }
+
+            .sliderNav i{
+                z-index: 10;
+                color: black;
+                font-size: 60px;
+                height:100%
+            }
+
+
+            .sideBar{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 10%;
+                height: 100%;
+                background-color: crimson;
+                /* box-sizing:border-box; */
+            }
+
+            .slide{
+                height: 100%;
+                position: absolute;
+                top:0;
+                transition: all 0.5s;
+            }
+
+            .image{
+                height: 100%;
+            }
+
+        </style>
+
+
+        <script>
+            // Slider
+            const slide = document.querySelector('.slide')
+            const slideUp = document.querySelector('.up')
+            const slideDown = document.querySelector('.down')
+
+
+            let x=0
+
+            slideUp.addEventListener("click",function(){
+                if(x  > "-120"){
+                    x = x-60
+                    slide.style.top = x + "vh"
+                }
+               
+            })
+
+            slideDown.addEventListener("click",function(){
+
+                if(x<"0")
+                x = x+60
+                slide.style.top = x + "vh"
+                // alert("Sliding Up")
+            })
+
+        </script>
+    </body>
+</html>
